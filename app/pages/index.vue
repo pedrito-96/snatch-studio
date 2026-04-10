@@ -5,7 +5,7 @@ useHead({
 
 useSeoMeta({
   title: 'Snatch Studio',
-  description: 'Snatch Studio - Creative 3D experiences'
+  description: 'Snatch Studio - Fisioterapia e Riabilitazione'
 })
 </script>
 
