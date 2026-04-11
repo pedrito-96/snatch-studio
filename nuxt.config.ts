@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxt/eslint', '@nuxt/ui', '@tresjs/nuxt'],
+  modules: ['@nuxt/eslint', '@nuxt/ui', '@tresjs/nuxt', 'nuxt-i18n-micro'],
 
   devtools: {
     enabled: true
@@ -31,6 +31,23 @@ export default defineNuxtConfig({
         braceStyle: '1tbs'
       }
     }
+  },
+
+  i18n: {
+    locales: [
+      { code: 'it', iso: 'it-IT', dir: 'ltr' },
+      { code: 'en', iso: 'en-US', dir: 'ltr' }
+    ],
+    defaultLocale: 'it',
+    translationDir: 'locales',
+    meta: true
+  },
+
+  icon: {
+    customCollections: [{
+      prefix: 'custom',
+      dir: './app/assets/icons'
+    }]
   },
 
   tres: {

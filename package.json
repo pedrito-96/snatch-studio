@@ -18,6 +18,7 @@
     "@tresjs/nuxt": "5.6.0",
     "@tresjs/post-processing": "^3.7.1",
     "nuxt": "^4.4.2",
+    "nuxt-i18n-micro": "^3.17.0",
     "tailwindcss": "^4.2.2"
   },
   "devDependencies": {

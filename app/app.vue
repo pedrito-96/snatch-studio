@@ -1,32 +1,29 @@
 <script setup>
 useHead({
-  meta: [
-    { name: 'viewport', content: 'width=device-width, initial-scale=1' }
-  ],
-  link: [
-    { rel: 'icon', href: '/favicon.ico' }
-  ],
+  meta: [{ name: "viewport", content: "width=device-width, initial-scale=1" }],
+  link: [{ rel: "icon", href: "/favicon.ico" }],
   htmlAttrs: {
-    lang: 'en'
-  }
-})
+    lang: "en",
+  },
+});
 
-const title = 'Nuxt Starter Template'
-const description = 'A production-ready starter template powered by Nuxt UI. Build beautiful, accessible, and performant applications in minutes, not hours.'
+const title = "Nuxt Starter Template";
+const description =
+  "A production-ready starter template powered by Nuxt UI. Build beautiful, accessible, and performant applications in minutes, not hours.";
 
 useSeoMeta({
   title,
   description,
   ogTitle: title,
   ogDescription: description,
-  ogImage: 'https://ui.nuxt.com/assets/templates/nuxt/starter-light.png',
-  twitterCard: 'summary_large_image'
-})
+  ogImage: "https://ui.nuxt.com/assets/templates/nuxt/starter-light.png",
+  twitterCard: "summary_large_image",
+});
 </script>
 
 <template>
   <UApp>
-    <UHeader>
+    <!-- <UHeader class="fixed top-0 left-0 right-0">
       <template #left>
         <NuxtLink to="/">
           <AppLogo class="w-auto h-6 shrink-0" />
@@ -47,14 +44,15 @@ useSeoMeta({
           variant="ghost"
         />
       </template>
-    </UHeader>
+    </UHeader> -->
 
     <UMain>
       <NuxtPage />
     </UMain>
+    <!-- 
+    <USeparator icon="i-custom-logo" />
 
-    <USeparator icon="i-simple-icons-nuxtdotjs" />
-
+    <UIcon name="i-custom-logo" class="text-4xl" />
     <UFooter>
       <template #left>
         <p class="text-sm text-muted">
@@ -72,6 +70,6 @@ useSeoMeta({
           variant="ghost"
         />
       </template>
-    </UFooter>
+    </UFooter> -->
   </UApp>
 </template>
