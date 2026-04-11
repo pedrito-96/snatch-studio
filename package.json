@@ -8,7 +8,8 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
-    "typecheck": "nuxt typecheck"
+    "typecheck": "nuxt typecheck",
+    "clean-project": "rm -rf node_modules .nuxt bun.lock && bun install"
   },
   "dependencies": {
     "@iconify-json/lucide": "^1.2.101",
@@ -26,6 +27,5 @@
     "eslint": "^10.2.0",
     "typescript": "^6.0.2",
     "vue-tsc": "^3.2.6"
-  },
-  "packageManager": "pnpm@10.33.0"
+  }
 }
