@@ -40,7 +40,8 @@ export default defineNuxtConfig({
     ],
     defaultLocale: 'it',
     translationDir: 'locales',
-    meta: true
+    meta: true,
+    strategy: 'prefix_except_default'
   },
 
   icon: {
