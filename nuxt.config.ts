@@ -14,6 +14,12 @@ export default defineNuxtConfig({
 
   compatibilityDate: '2025-01-15',
 
+  nitro: {
+    prerender: {
+      ignore: ['/en/en']
+    }
+  },
+
   vite: {
     optimizeDeps: {
       include: [
@@ -50,7 +56,6 @@ export default defineNuxtConfig({
       dir: './app/assets/icons'
     }]
   },
-
   tres: {
     devtools: true
   }
